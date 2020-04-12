@@ -73,8 +73,8 @@ client.on('message', message => {
 
     }
 
-    if (message.content ==="!helpMe") {
-        const exampleEmbed = new Discord.RichEmbed()
+    if (message.content ==="!helpme") {
+    /*    const exampleEmbed = new Discord.RichEmbed()
             .setColor('#0099ff')
             .setTitle('Commands For Noob Bot')
             .setURL('')
@@ -91,8 +91,29 @@ client.on('message', message => {
             .setImage('https://i.redd.it/i2q0r20gyeo21.png')
             .setTimestamp()
             .setFooter('Created By Billy', 'https://i.redd.it/i2q0r20gyeo21.png');
-        message.channel.send(exampleEmbed);
-    }
+        message.channel.send(exampleEmbed); */
+        
+        const exampleEmbed = new Discord.MessageEmbed()
+    	.setColor('#0099ff')
+	    .setTitle('Some title')
+	    .setURL('https://discord.js.org/')
+    	.setAuthor('Billy' 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+    	.setDescription('Some description here')
+    	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	    .addFields(
+    		{ name: 'Regular field title', value: 'Some value here' },
+    		{ name: '\u200B', value: '\u200B' },
+    		{ name: 'Inline field title', value: 'Some value here', inline: true },
+    		{ name: 'Inline field title', value: 'Some value here', inline: true },
+            	)
+    	.addField('Inline field title', 'Some value here', true)
+    	.setImage('https://i.imgur.com/wSTFkRM.png')
+    	.setTimestamp()
+	    .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+
+        channel.send(exampleEmbed);
+        
+       }
 
     if (message.content.startsWith('!n00b')) {
         if (message.mentions.members.size === 1) {
