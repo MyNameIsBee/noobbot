@@ -36,7 +36,7 @@ client.on('message', message => {
                 "https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif",
                 "https://media.giphy.com/media/26ufgSwMRqauQWqL6/giphy.gif",
             ]
-            message.channel.send(message.author.toString() + " gave " + member.toString() + " a high five!", image: {
+            message.channel.send(message.author.toString() + " gave " + member.toString() + " a high five!", {
                 file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
             });
         }
