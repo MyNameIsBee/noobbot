@@ -1,0 +1,12 @@
+{
+  "name": "noob-bot",
+  "version": "1.0.0",
+  "description": "First Discord Bot",
+  "main": "bot.js",
+  "author": "Billy Stride",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^2.5.3",
+    "winston": "^3.2.1"
+  }
+}
