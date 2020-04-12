@@ -108,6 +108,9 @@ client.on('message', message => {
         message.channel.send("Hey" + message.author)
     }
 
+    if (message.content === '!test') {
+        message.channel.send("Hey" + message.author.toString())
+    }
 });
 
 // login to Discord with your app's token
