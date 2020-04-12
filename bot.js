@@ -74,29 +74,10 @@ client.on('message', message => {
     }
 
     if (message.content ==="!helpme") {
-    /*    const exampleEmbed = new Discord.RichEmbed()
-            .setColor('#0099ff')
-            .setTitle('Commands For Noob Bot')
-            .setURL('')
-            .setAuthor('Noob Bot', 'https://i.redd.it/i2q0r20gyeo21.png', '')
-            .setDescription('Here are the following commands for the bot:')
-            .setThumbnail('https://i.redd.it/i2q0r20gyeo21.png')
-            .addField('!help', 'Brings up this help box')
-            .addField('!hug', 'Send a hug to someone in the server!')
-            .addField('!high5', 'Give someone a high five!')
-            //.addBlankField()
-            //.addField('Inline field title', 'Some value here', true)
-            //.addField('Inline field title', 'Some value here', true)
-            //.addField('Inline field title', 'Some value here', true)
-            .setImage('https://i.redd.it/i2q0r20gyeo21.png')
-            .setTimestamp()
-            .setFooter('Created By Billy', 'https://i.redd.it/i2q0r20gyeo21.png');
-        message.channel.send(exampleEmbed); */
-        
         const exampleEmbed = new Discord.MessageEmbed()
     	.setColor('#0099ff')
-	    .setTitle('Some title')
-	    .setURL('https://discord.js.org/')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
     	.setAuthor('Billy' 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
     	.setDescription('Some description here')
     	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
