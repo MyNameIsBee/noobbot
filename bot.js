@@ -36,7 +36,7 @@ client.on('message', message => {
                 "https://media.giphy.com/media/lr2bkSkxMWFCo/giphy.gif",
                 "https://media.giphy.com/media/26ufgSwMRqauQWqL6/giphy.gif",
             ]
-            message.channel.send(message.author + " gave " + member + " a high five!", {
+            message.channel.send(message.author.toString() + " gave " + member.toString() + " a high five!", {
                 file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
             });
         }
@@ -60,7 +60,7 @@ client.on('message', message => {
                 "https://media.giphy.com/media/ueNJkRh9awrhS/giphy.gif",
                 "https://66.media.tumblr.com/f2a878657add13aa09a5e089378ec43d/tumblr_n5uovjOi931tp7433o1_500.gif",
             ]
-            message.channel.send(message.author + " gave " + member + " a hug!", {
+            message.channel.send(message.author.toString() + " gave " + member.toString() + " a hug!", {
                 file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
             });
         }
@@ -73,7 +73,7 @@ client.on('message', message => {
 
     }
 
-    if (message.content ==="!help") {
+    if (message.content ==="!helpMe") {
         const exampleEmbed = new Discord.RichEmbed()
             .setColor('#0099ff')
             .setTitle('Commands For Noob Bot')
@@ -102,10 +102,6 @@ client.on('message', message => {
             return message.channel.send("nay");
         }
 
-    }
-
-    if (message.content === '!test') {
-        message.channel.send("Hey" + message.author)
     }
 
     if (message.content === '!test') {
