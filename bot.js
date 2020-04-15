@@ -112,7 +112,7 @@ client.on('message', message => {
         
     }
 
-    if (message.content.toLowerCase().includes("loud" || "weed" || "blunt" ||"stoned" || "kush" || "420")) {
+    if (message.content.toLowerCase().includes("loud" || "weed" || "blunt" ||"stoned" || "kush" || "420" || "smoke")) {
         message.channel.send("Yikes dude drugs are cringe")
     }
     
