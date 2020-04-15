@@ -92,9 +92,9 @@ client.on('message', message => {
     if(message.content ==='!blue'){
      const exampleEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle('Some title')
+	.setTitle('Commands')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setAuthor('Billy', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.addFields(
@@ -110,6 +110,10 @@ client.on('message', message => {
 
 	message.channel.send(exampleEmbed);   
         
+    }
+
+    if (message.content.toLowerCase().includes("loud")) {
+        message.channel.send("Yikes dude")
     }
     
 });
