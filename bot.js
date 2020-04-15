@@ -114,11 +114,6 @@ client.on('message', message => {
     if (message.content.toLowerCase().includes("loud")) {
         message.channel.send("Yikes dude drugs are cringe")
     }
-    
-    if(message.content.toLowerCase().includes("xd")){
-        message.channel.send("RAWR XD")
-    }
-
 });
 
 // login to Discord with your app's token
