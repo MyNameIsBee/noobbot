@@ -10,7 +10,7 @@ const client = new Discord.Client();
 // this event will only trigger one time after logging in
 client.once('ready', () => {
     console.log('Ready!');
-    client.user.setActivity('YouTube', { type: 'WATCHING' });
+    client.user.setActivity('Micenite', { type: 'PLAYING' });
 });
 
 client.on('message', message => {
