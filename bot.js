@@ -4,6 +4,8 @@ const Discord = require('discord.js');
 // create a new Discord client
 const client = new Discord.Client();
 
+
+bot.user.setActivity(`this won't appear in the bot's custom status!`, {type: 4});
 // when the client is ready, run this code
 // this event will only trigger one time after logging in
 client.once('ready', () => {
@@ -95,7 +97,7 @@ client.on('message', message => {
 	.setTitle('Commands')
 	.setURL('https://discord.js.org/')
 	.setAuthor('Billy', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Here are so')
+	.setDescription('Here are some commands I can perform')
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.addFields(
 		{ name: '!Help', value: 'Shows a set of commands this bot performs' },
