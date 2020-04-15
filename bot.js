@@ -5,11 +5,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-client.user.setActivity('YouTube', { type: 'WATCHING' });
+
 // when the client is ready, run this code
 // this event will only trigger one time after logging in
 client.once('ready', () => {
     console.log('Ready!');
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
