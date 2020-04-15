@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-bot.user.setActivity(`this won't appear in the bot's custom status!`, {type: 4});
+client.user.setActivity('YouTube', { type: 'WATCHING' });
 // when the client is ready, run this code
 // this event will only trigger one time after logging in
 client.once('ready', () => {
