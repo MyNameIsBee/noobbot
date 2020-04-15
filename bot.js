@@ -111,6 +111,9 @@ client.on('message', message => {
 	message.channel.send(exampleEmbed);   
         
     }
+    if (message.content.toLowerCase().includes("loud")) {
+        message.channel.send("Yikes dude drugs are cringe")
+    }
     
     if(message.content.toLowerCase().includes("xd")){
         message.channel.send("RAWR XD")
