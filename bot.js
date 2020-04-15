@@ -114,7 +114,7 @@ client.on('message', message => {
 
     const drugWords = ['weed','loud'];
 
-    if (message.content.toLowerCase().includes(drugWords)) {
+    if (message.content.toLowerCase().includes(drugWords.toString())) {
         message.channel.send("Yikes dude drugs are cringe")
     }
     
